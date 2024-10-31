@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/counter",
+  "version": "1.0.0",
+  "title": "Counter",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Show company stats or how many happy customers you have with animation effects",
+  "supports": {
+    "className": true
+  },
+  "opSettings": {
+    "label": {
+      "group": "design",
+      "toggleAttribute": "showLabel",
+      "selector": ".op-block_counter-label",
+      "label": "Counter Label",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "number": {
+      "group": "design",
+      "selector": ".op-block__counter-number-wrapper .op-block__counter-number",
+      "label": "Counter Number",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true,
+          "gap": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true
+      }
+    },
+    "prefix": {
+      "group": "design",
+      "toggleAttribute": "showPrefix",
+      "selector": ".op-block__counter-number-prefix",
+      "label": "Counter Prefix",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "suffix": {
+      "group": "design",
+      "toggleAttribute": "showSuffix",
+      "selector": ".op-block__counter-number-suffix",
+      "label": "Counter Suffix",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "icon": {
+      "group": "design",
+      "toggleAttribute": "showIcon",
+      "selector": ".op-block__counter-icon-wrapper i",
+      "label": "Counter Icon",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "file:../../../counter-view.js"
+  ],
+  "style": [
+    "file:../../../style-block-4.css"
+  ]
+}

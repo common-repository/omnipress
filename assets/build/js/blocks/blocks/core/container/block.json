@@ -1,0 +1,202 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/container",
+  "version": "1.0.0",
+  "title": "Container",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create beautiful row and column layouts with plenty of styling controls & responsive options",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "usesContext": [
+    "classNames",
+    "omnipress/parentId"
+  ],
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "backgroundImage": true
+        }
+      }
+    },
+    "flex": {
+      "group": "design",
+      "label": "Content",
+      "selector": " > .op-container-innerblocks-wrapper",
+      "fields": {}
+    },
+    "link": {
+      "group": "design",
+      "label": "Link",
+      "selector": " a",
+      "fields": {}
+    },
+    "button": {
+      "group": "design",
+      "label": "Button",
+      "selector": " button",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "fontSize": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "content": {
+      "group": "design",
+      "label": "Content",
+      "selector": " > .op-container-innerblocks-wrapper",
+      "fields": {}
+    },
+    "layout": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    },
+    "colors": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    },
+    "background": {
+      "group": "design",
+      "label": "Content",
+      "fields": {}
+    }
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "css": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "columnWidth": {
+      "type": "string",
+      "default": "alignwide"
+    },
+    "contentWidth": {
+      "type": "string",
+      "default": "alignwide"
+    },
+    "variationType": {
+      "type": "string"
+    },
+    "columnsCount": {
+      "type": "number",
+      "default": 1
+    },
+    "backgroundType": {
+      "type": "string",
+      "default": "color"
+    },
+    "background": {
+      "type": "object",
+      "default": {}
+    },
+    "videoBackground": {
+      "type": "string",
+      "default": ""
+    },
+    "videoOpacity": {
+      "type": "number",
+      "default": 1
+    },
+    "overlay": {
+      "type": "object",
+      "default": {}
+    },
+    "container": {
+      "type": "object",
+      "default": {}
+    },
+    "layout": {
+      "type": "object",
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "default": {}
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "link": {
+      "type": "object",
+      "default": {}
+    },
+    "button": {
+      "type": "object",
+      "default": {}
+    },
+    "flex": {
+      "type": "object",
+      "default": {
+        "alignItems": "flex-start"
+      }
+    },
+    "content": {
+      "type": "object",
+      "default": {}
+    },
+    "blockLink": {
+      "type": "string",
+      "default": ""
+    },
+    "link_rel": {
+      "type": "string",
+      "default": ""
+    },
+    "link_target": {
+      "type": "boolean",
+      "default": false
+    },
+    "colors": {
+      "type": "object",
+      "default": {}
+    },
+    "preview": {
+      "type": "boolean",
+      "default": true
+    },
+    "hideOnDesktop": {
+      "type": "boolean"
+    },
+    "hideOnTablet": {
+      "type": "boolean"
+    },
+    "hideOnMobile": {
+      "type": "boolean"
+    }
+  },
+  "textdomain": "omnipress",
+  "style": [
+    "omnipress/block/container"
+  ]
+}

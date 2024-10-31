@@ -1,0 +1,184 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/post-grid",
+  "version": "1.0.0",
+  "title": "Post Grid",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Display interactive blog in a grid layout",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "card": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items",
+      "label": "card",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "image": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-image img",
+      "label": "Image",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "content": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card-content",
+      "label": "Content",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        }
+      }
+    },
+    "Title": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-title h4",
+      "label": "Title",
+      "fields": {
+        "color": {
+          "text": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "description": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-description",
+      "label": "Description",
+      "fields": {
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "categories": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-categories a",
+      "label": "Categories",
+      "fields": {
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "spacing": {
+          "padding": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "categoriesWrapper": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card-categories",
+      "label": "Categories Wrapper",
+      "fields": {
+        "dimension": {
+          "gap": true
+        }
+      }
+    },
+    "date": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-date",
+      "label": "Date",
+      "fields": {
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "author": {
+      "group": "design",
+      "selector": ".op-block__post-grid-card-wrap .op-block__post-grid-card.op-block__post-grid-card-items .op-block__post-grid-card-author a",
+      "label": "Author",
+      "fields": {
+        "color": {
+          "text": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "attributes": {
+    "disableAuthor": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableCategory": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableDescription": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableFeaturedImage": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableDate": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ]
+}

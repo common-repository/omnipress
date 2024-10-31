@@ -1,0 +1,96 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/icon-box",
+  "version": "1.0.0",
+  "title": "Icon Box",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add icon and text description using a single block",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "opSettings": {
+    "iconStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-icon i",
+      "label": "Icon",
+      "toggleAttribute": "showIcon",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "typography": {
+          "colorOnly": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "titleStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-content-title > span",
+      "toggleAttribute": "showTitle",
+      "label": "Heading",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "descStyle": {
+      "group": "design",
+      "selector": ".op-block__icon-box-content-description",
+      "toggleAttribute": "showDesc",
+      "label": "Description",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "icon box",
+    "icon",
+    "card"
+  ]
+}

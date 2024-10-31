@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/video",
+  "version": "1.0.0",
+  "title": "Video",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Embed a video from your media library or upload a new one.",
+  "supports": {
+    "className": true
+  },
+  "attributes": {},
+  "opSettings": {
+    "videoWrapper": {
+      "group": "design",
+      "selector": ".op-block__video-wrapper",
+      "label": "Video Wrapper",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "editorScript": [
+    "file:../../../block-2.js"
+  ],
+  "editorStyle": "file:../../../block-2.css",
+  "style": [
+    "file:../../../style-block-2.css"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/paragraph",
+  "version": "1.0.0",
+  "title": "Paragraph",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Take control of your text appearance and paragraph formatting with multiple setting options.",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

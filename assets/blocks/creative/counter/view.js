@@ -1,0 +1,1 @@
+!function(){const t=document.querySelectorAll(".op-block__counter");0!==t.length&&t.forEach((t=>{const e=t.querySelector(".op-block__counter-number"),n=t.getAttribute("data-counter-number"),r=t.getAttribute("data-duration");let o=0;const c=parseInt(n,10),u=parseInt(r,10),a=Math.ceil(c/u*10);setInterval((()=>{o<c&&(o+=a,e.innerText=o)}),10),o=0}))}();

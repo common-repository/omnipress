@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/slider",
+  "version": "1.0.0",
+  "title": "Slider",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create a captivating visual experience & impress your audience",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    }
+  },
+  "opSettings": {
+    "navigation": {
+      "group": "design",
+      "selector": "[class^='swiper-button']",
+      "label": "Navigation",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "pagination": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet",
+      "label": "Pagination",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "paginationActive": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet-active",
+      "label": "Pagination Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbar": {
+      "group": "design",
+      "selector": ".swiper-scrollbar",
+      "label": "Scrollbar",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbarActive": {
+      "group": "design",
+      "selector": "swiper-scrollbar-drag",
+      "label": "Scrollbar Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

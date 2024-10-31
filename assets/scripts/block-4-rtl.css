@@ -1,0 +1,2 @@
+.accordion{background-color:#fff;cursor:pointer;box-shadow:-1px 1px 0px rgba(0,0,0,.1)}.op-block-setting__icons{display:flex;align-items:center;gap:5px}.op-block-setting__icons i{padding:5px 10px 5px 9px;border:1px solid var(--op-clr-light-gray, gray);border-radius:4px;font-size:17px;cursor:pointer}.op-block-setting__icons i:hover,.op-block-setting__icons i.active{background-color:var(--op-clr-light-gray, gray)}
+.op-settings__counter-number input{display:inline-block;max-width:70px;padding:3px;border:1px solid var(--op-clr-light-gray, lightgray);border-radius:5px}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/tab-labels",
+  "version": "1.0.0",
+  "title": "Tab Labels",
+  "parent": [
+    "omnipress/tabs"
+  ],
+  "icon": "",
+  "category": "omnipress",
+  "description": "Organize and display content in multiple tabs.",
+  "supports": {
+    "align": false,
+    "html": false,
+    "multiple": false,
+    "reusable": false,
+    "className": true,
+    "lock": true
+  },
+  "textdomain": "omnipress"
+}

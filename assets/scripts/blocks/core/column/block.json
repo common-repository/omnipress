@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/innercolumn",
+  "version": "1.0.0",
+  "title": "Inner column",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Inner Column blocks allow easy content structuring, making visually appealing and responsive web page layouts",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    }
+  },
+  "opSettings": {
+    "column": {}
+  },
+  "textdomain": "omnipress"
+}

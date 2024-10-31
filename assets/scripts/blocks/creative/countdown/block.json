@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/countdown",
+  "version": "1.0.0",
+  "title": "Countdown",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Highlight upcoming events with countdown timer",
+  "supports": {
+    "className": true
+  },
+  "textdomain": "omnipress",
+  "viewScript": "file:../../../countdown-view.js",
+  "editorScript": [
+    "file:../../../block-6.js"
+  ],
+  "editorStyle": "file:../../../block-6.css",
+  "style": [
+    "file:../../../style-block-6.css"
+  ]
+}

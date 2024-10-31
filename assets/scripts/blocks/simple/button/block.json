@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/button",
+  "version": "1.0.0",
+  "title": "Button",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add buttons to redirect user to different webpages",
+  "supports": {
+    "className": true
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "file:../../../button-view.js"
+  ],
+  "style": [
+    "file:../../../style-block-3.css"
+  ]
+}

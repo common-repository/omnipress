@@ -1,0 +1,103 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/countdown",
+  "version": "1.0.0",
+  "title": "Countdown",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Highlight upcoming events with countdown timer",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "container": {
+      "group": "design",
+      "selector": ".op-block-countdown__content-wrapper",
+      "label": "Wrapper",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "min-height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "digitStyles": {
+      "group": "design",
+      "selector": ".op-block-countdown__digit",
+      "label": "Digit",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true,
+        "dimension": {
+          "height": false,
+          "width": false,
+          "min-height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "labelStyles": {
+      "group": "design",
+      "selector": ".op-block__countdown-label",
+      "label": "Label",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true,
+        "dimension": {
+          "height": false,
+          "width": false,
+          "min-height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "divider": {
+      "group": "design",
+      "selector": ".op-block-countdown__divider-wrapper .op-block__divider",
+      "label": "Divider",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

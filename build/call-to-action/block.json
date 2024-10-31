@@ -1,0 +1,192 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "omnipress/call-to-action",
+	"version": "0.1.0",
+	"title": "Call To Action",
+	"category": "omnipress",
+	"description": "CTA gutenberg block",
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "file:./call-to-action.js",
+	"textdomain": "omnipress",
+	"editorStyle": "file:./call-to-action.css",
+	"style": "file:./style-call-to-action.css",
+	"attributes": {
+		"block_id": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"displayButton": {
+			"type": "boolean",
+			"default": false
+		},
+		"buttonLink": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonLabel": {
+			"type": "string",
+			"default": "Click Me"
+		},
+		"gradient": {
+			"type": "string"
+		},
+		"openNewTab": {
+			"type": "boolean",
+			"default": false
+		},
+		"titleColor": {
+			"type": "string"
+		},
+		"descriptionColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"labelColor": {
+			"type": "string"
+		},
+		"customtitleColor": {
+			"type": "string"
+		},
+		"customdescriptionColor": {
+			"type": "string"
+		},
+		"headFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"headFontWeight": {
+			"type": "string",
+			"default": 500
+		},
+		"headFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"headLineHeightType": {
+			"type": "string",
+			"default": "px"
+		},
+		"headFontSize": {
+			"type": "number",
+			"default": 24
+		},
+		"headFontSizeTablet": {
+			"type": "number"
+		},
+		"headFontSizeMobile": {
+			"type": "number"
+		},
+		"headLineHeight": {
+			"type": "number"
+		},
+		"headLineHeightTablet": {
+			"type": "number"
+		},
+		"headLineHeightMobile": {
+			"type": "number"
+		},
+		"headLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"descFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"descFontWeight": {
+			"type": "string",
+			"default": 400
+		},
+		"descFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"descLineHeightType": {
+			"type": "string",
+			"default": "px"
+		},
+		"descFontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"descFontSizeTablet": {
+			"type": "number"
+		},
+		"descFontSizeMobile": {
+			"type": "number"
+		},
+		"descLineHeight": {
+			"type": "number",
+			"default": 27
+		},
+		"descLineHeightTablet": {
+			"type": "number"
+		},
+		"descLineHeightMobile": {
+			"type": "number"
+		},
+		"descLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"thirdFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"thirdFontWeight": {
+			"type": "string",
+			"default": 400
+		},
+		"thirdFontSubset": {
+			"type": "string"
+		},
+		"thirdFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"thirdLineHeightType": {
+			"type": "string",
+			"default": "em"
+		},
+		"thirdFontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"thirdFontSizeTablet": {
+			"type": "number"
+		},
+		"thirdFontSizeMobile": {
+			"type": "number"
+		},
+		"thirdLineHeight": {
+			"type": "number"
+		},
+		"thirdLineHeightTablet": {
+			"type": "number"
+		},
+		"thirdLineHeightMobile": {
+			"type": "number"
+		},
+		"thirdLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "center"
+		}
+	}
+}

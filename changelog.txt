@@ -1,0 +1,170 @@
+== Version 1.4.2 ==
+    *Fix: the undefined blockId warning in the Post Grid block.
+    *Fix: Premium notice now hides after activating the license.
+
+    *NEW: Added a resize handler to the Image block.
+    *NEW: Added link and lightbox options to the Image block.
+    *NEW: Introduced the Advanced Query block.[Premium]
+    *NEW: Introduce dynamic query block for Advanced query loop block
+
+  Other Improvements:
+    - Added admin notices for license activation, required plugin installations, and database updates.
+
+== Version 1.4.1 ==
+  * Fixes:
+      - Resolved minor issues affecting blocks.
+
+  * Others
+    -  Redesigned the Settings page UI.
+    -  Introduced a showcase for premium features.
+    -  Enhanced block compatibility with previous demos and patterns.
+
+== Version 1.4.0 ==
+   * Enhancements:
+      ## New Features:
+          🚀 Blocks Enable/Disable Functionality
+              - Description: Added the ability to enable or disable specific blocks from the settings.
+              - Usage: Go to the settings/all blocks page and toggle the switch to enable or disable the desired blocks.
+
+          🚀 Container Default Settings Controller
+              - Description: Introduced a controller for setting default container settings.
+              - Benefits: Simplifies the process of applying consistent settings to all containers, saving time and ensuring uniformity.
+              - Usage: Access the controller from the plugin's general settings.
+
+          🚀 Custom Scripts and Styling Support 👑[Premium]
+              - Description: Added support for integrating custom scripts and styles into sites.
+              - Benefits: Enhances flexibility by allowing users to add custom JavaScript and CSS, enabling more advanced customization and functionality.
+              - Usage: Access the custom scripts and styling options from the block settings panel and insert your custom code.
+
+          🛠️ Block's Setting Editing Permission Control 👑[Premium]
+              - Description: Introduced control over who can edit our block's settings.
+              - Benefits: Increases security and management capabilities by allowing administrators to specify which user roles have permission to edit block settings.
+              - Usage: Configure the editing permissions in the block settings under the 'Permissions' section.
+
+          🔄 Dynamic Fields Support 👑[Premium]
+              - Description: Added support for dynamic fields in blocks, allowing users to insert dynamic content.
+              - Benefits: Increases versatility by enabling blocks to display dynamic data, making content more interactive and responsive to user input.
+              - Usage: Access the dynamic fields options in the block settings to add and configure dynamic content.
+
+          ✨ Animation Settings 👑[Premium]
+              - Description: Added animation settings to blocks, allowing users to animate their content.
+              - Benefits: Enhances visual appeal and user engagement by providing various animation options for block elements.
+              - Usage: Access the animation settings in the block settings to configure animations such as fade-in, slide, bounce, and more.
+
+      📦 New Blocks: Contact Form
+          - Description: Added a new Contact Form block for integrating Contact Form 7 plugin's forms.
+          - Benefits: Simplifies the process of embedding Contact Form 7 forms directly into pages using a block, providing a seamless and efficient form integration experience.
+          - Usage: Add the Contact Form block from the block library, then select and configure the desired Contact Form 7 form from the block settings.
+
+  * Fixes:
+      - Fixes Minor issues which related to the blocks
+
+  * Others
+    - Update Settings page UI.
+    - Block Settings:
+        - Description: Re-arranged all block settings for better usability.
+        - Added settings for typography's hover and active state styling.
+
+== Version 1.3.3 ==
+  * Others:
+     - Enhanced Settings for blocks
+
+  - minor bug fixes
+
+== Version 1.3.2 ==
+  - minor bug fixes
+
+== Version 1.3.1 ==
+  * Enhancements:
+      - Addressed minor issues affecting various blocks to enhance overall stability.
+      - Implemented performance enhancements and optimized code for better plugin efficiency.
+  * Other:
+      - Conducted compatibility testing with WordPress 6.5 to ensure seamless integration.
+
+== Version 1.3.0 ==
+  * Enhancements:
+    ## Introduction of New Blocks:
+        - Google Maps
+        - Image
+        - Video
+        - Paragraph
+        - Accordion
+        - Counter
+        - Icon Box
+        - Post Grid
+        - Products List
+        - Product Categories List
+        - Updated Block Icons.
+
+    - Enhanced Settings UI.
+    - Resolved minor issues associated with various blocks to improve stability.
+    - Reorganized plugin's structure for better management.
+  * Other: Compatibility test with WordPress 6.5
+
+== Version 1.2.2 ==
+  * Enhancements:
+    - Updated missing block icons for a more polished appearance.
+    - Improved functionality related to demo imports for a smoother user experience.
+    - Resolved minor issues associated with various blocks for enhanced stability.
+
+== Version 1.2.1 ==
+  * Enhancements:
+    -Introducing New Blocks:
+      -Tabs
+
+  * Breaking Changes:
+    - Slider Update:
+    - The previous version of the slider has undergone significant changes, and it may experience issues after updating.
+  * Fixes:
+    - Blocks: Fixed some minor issues related to various blocks.
+
+== Version 1.2.0 ==
+  * Enhancements:
+    * Introduces new blocks:
+      - Dual Buttons
+      - Button
+      - Icons
+      - Mega Menu
+      - Product Category
+      - Products Carousel
+      - Products Category
+      - Container
+      - Countdown
+
+    * Supports a variety of fonts.
+    * Implements custom templates for rendering content within the Mega Menu block.
+
+  * Fixes:
+    - Addresses minor bug fixes for improved stability and performance.
+
+== Version 1.1.5 ==
+* Fixes: Fixed CSS issue in other custom post types.
+* Fixes: Fixed demo import minor issues.
+
+== Version 1.1.4 ==
+* Fixes: Fixed minor issue with slider.
+
+== Version 1.1.3 ==
+* Fixes: Fixed minor issue with Entire Demo Importer.
+* Fixes: Minor issue with slider blocks.
+
+== Version 1.1.2 ==
+* Enhancement: Added new blocks: Heading, Slider, Custom CSS, Team
+* Fixes: Fixed a bug related to demos and patterns UI and code optimizations.
+
+== Version 1.1.1 ==
+* Fixes: Fixed minor issue with demo data import.
+
+== Version 1.1.0 ==
+* Enhancement: Restructured plugin structure
+* Enhancement: Added support for patterns and demos list
+* Enhancement: Added patterns and demos library support from editor pages
+* Enhancement: Overall plugin re-designed.
+* Other: Compatibility test with WordPress 6.2
+
+== Version 1.0.1 ==
+* Compatibility test with WordPress 6.1
+* Minor issues fixes
+
+== Version 1.0.0 =
+* Initial release

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/menuitem",
+  "version": "1.0.0",
+  "title": "Menu Item",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add menu item within megamenu block",
+  "supports": {
+    "html": false,
+    "className": false,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    }
+  },
+  "parent": [
+    "omnipress/megamenu"
+  ],
+  "attributes": {
+    "lists": {
+      "type": "object",
+      "default": {}
+    },
+    "linkStyles": {
+      "type": "object",
+      "default": {}
+    },
+    "submenu": {
+      "type": "object",
+      "default": {
+        "Border": {}
+      }
+    },
+    "menuItem": {
+      "type": "object",
+      "default": {}
+    },
+    "content": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "isSubmenu": {
+      "type": "boolean"
+    },
+    "icon": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "file:../../../menu-item-view.js"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/container",
+  "version": "1.0.0",
+  "title": "Container",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create beautiful row and column layouts with plenty of styling controls & responsive options",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "backgroundImage": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/css",
+  "title": "Custom CSS",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add custom CSS with blocks for styling without theme changes",
+  "keywords": [
+    "custom",
+    "css"
+  ],
+  "textdomain": "omnipress",
+  "attributes": {
+    "css": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true,
+    "className": true,
+    "__unstablePasteTextInline": true,
+    "__experimentalSlashInserter": true
+  },
+  "viewScript": "file:./index.js",
+  "editorScript": [
+    "file:../../../block-5.js"
+  ],
+  "editorStyle": "file:../../../block-5.css",
+  "style": [
+    "file:../../../style-block-5.css"
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/product-list",
+  "version": "1.0.0",
+  "title": "Product List",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Display WooCommerce products in a list view",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "toggle": {
+      "type": "object",
+      "default": {
+        "title": true,
+        "description": true,
+        "image": true,
+        "price": true,
+        "addToCart": true,
+        "badge": true,
+        "ratings": true,
+        "discount": true,
+        "categories": true,
+        "cart": true
+      }
+    }
+  },
+  "opSettings": {
+    "item": {
+      "group": "design",
+      "selector": ".product-item",
+      "label": "Content",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "mediaWrapperImg": {
+      "group": "design",
+      "selector": ".product-item-image img",
+      "label": "Image",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "height": true,
+          "width": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "image": true
+      }
+    },
+    "title": {
+      "group": "design",
+      "selector": ".product-item-title h4",
+      "label": "Title",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "description": {
+      "group": "design",
+      "selector": ".product-item-description",
+      "label": "Products Description",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "regularPrice": {
+      "group": "design",
+      "selector": ".product-item-price .woocommerce-Price-amount",
+      "label": "Out of stock",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "categories": {
+      "group": "design",
+      "selector": ".product-item-price .woocommerce-Price-amount",
+      "label": "Categories",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "discount": {
+      "group": "design",
+      "selector": ".op-woo-catlist__item-title h4",
+      "label": "Discount",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "saleTag": {
+      "group": "design",
+      "selector": ".product-item-inner .op-onsale",
+      "label": "Discount",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "ratings": {
+      "group": "design",
+      "selector": ".product-item-rating",
+      "label": "Ratings",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "reviewCount": {
+      "group": "design",
+      "selector": ".product-item-reviews-count",
+      "label": "Ratings",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "addToCart": {
+      "group": "design",
+      "selector": ".op-add_to_cart",
+      "label": "Add to cart",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ]
+}

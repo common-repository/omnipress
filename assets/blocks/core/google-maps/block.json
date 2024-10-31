@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/maps",
+  "version": "1.0.0",
+  "title": "Google Maps",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add a Google Map location on your website",
+  "supports": {
+    "className": true
+  },
+  "opSettings": {},
+  "keywords": [
+    "maps",
+    "google map"
+  ],
+  "textdomain": "omnipress",
+  "editorScript": "file:./index.js",
+  "style": [
+    "file:./style-index.css"
+  ]
+}

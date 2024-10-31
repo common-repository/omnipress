@@ -1,0 +1,184 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/heading",
+  "version": "1.0.0",
+  "title": "Heading",
+  "category": "omnipress",
+  "description": "Create advanced heading with title, subtitle and separator controls.",
+  "icon": "",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "attributes": {
+    "condition": {
+      "type": "object",
+      "default": {
+        "enable": true,
+        "options": [
+          {
+            "type": "user_rules",
+            "status": "logged_in",
+            "user_roles": [
+              "administrator"
+            ],
+            "user_ids": []
+          }
+        ]
+      }
+    },
+    "headingStyles": {
+      "type": "object",
+      "default": {}
+    },
+    "css": {
+      "type": "string"
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "blockLink": {
+      "type": "string",
+      "default": ""
+    },
+    "dataAttributes": {
+      "type": "string",
+      "default": ""
+    },
+    "variation": {
+      "type": "string"
+    },
+    "isLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "mdIsLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "smIsLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "newTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": ".op-block__heading-content, .wp-block-omnipress-heading > h1, .wp-block-omnipress-heading > h2, .wp-block-omnipress-heading > h3, .wp-block-omnipress-heading > h4, .wp-block-omnipress-heading > h5, .wp-block-omnipress-heading > h6, .wp-block-omnipress-heading > a, .wp-block-omnipress-heading > p",
+      "default": "Surround yourself with greatness."
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "seperatorIsActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "seperator": {
+      "type": "object",
+      "default": {
+        "smDisplay": "block",
+        "mdDisplay": "block"
+      }
+    },
+    "subHeading": {
+      "type": "string",
+      "default": ""
+    },
+    "subheadingTagName": {
+      "type": "string",
+      "default": "p"
+    },
+    "isOpenSubHeading": {
+      "type": "boolean",
+      "default": false
+    },
+    "headingType": {
+      "type": "string",
+      "default": "h2"
+    },
+    "linkStyles": {
+      "type": "object",
+      "default": {}
+    },
+    "subHeadingStyling": {
+      "type": "object",
+      "default": {
+        "smDisplay": "block",
+        "mdDisplay": "block"
+      }
+    },
+    "headingWrapper": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "opSettings": {
+    "headingStyles": {
+      "group": "design",
+      "selector": ".op-block__heading-content",
+      "label": "Heading",
+      "fields": {
+        "typography": true,
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "subHeadingStyling": {
+      "group": "design",
+      "toggleAttribute": "isOpenSubHeading",
+      "selector": ".op-block__heading-sub",
+      "label": "Sub Heading",
+      "fields": {
+        "typography": true,
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "transform": true
+      }
+    },
+    "seperator": {
+      "group": "design",
+      "selector": ".op-block__heading-separator",
+      "label": "Separator",
+      "toggleAttribute": "seperatorIsActive",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "transform": true
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/carousel",
+  "version": "1.0.0",
+  "title": "Products Carousel",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Create an engaging display of your products that scrolls horizontally",
+  "supports": {
+    "html": false
+  },
+  "viewScript": [
+    "file:../../../product-carousel-view.js"
+  ],
+  "editorScript": [
+    "file:../../../woo-block-9.js"
+  ],
+  "editorStyle": "file:../../../woo-block-9.css",
+  "style": [
+    "file:../../../style-woo-block-9.css"
+  ],
+  "keywords": [
+    "slider",
+    "woocommerce",
+    "carousel",
+    "products"
+  ],
+  "textdomain": "omnipress"
+}

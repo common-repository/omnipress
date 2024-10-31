@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/tabs",
+  "version": "1.0.0",
+  "title": "Tabs",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Organize and display content in multiple tabs.",
+  "supports": {
+    "align": false,
+    "html": false,
+    "multiple": true,
+    "inserter": true,
+    "dimensions": {
+      "minHeight": false
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "file:../../../tabs-view.js"
+  ],
+  "editorScript": [
+    "file:../../../block-7.js"
+  ],
+  "editorStyle": "file:../../../block-7.css",
+  "style": [
+    "file:../../../style-block-7.css"
+  ]
+}

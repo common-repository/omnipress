@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/image",
+  "version": "1.0.0",
+  "title": "Image",
+  "category": "omnipress",
+  "icon": "",
+  "description": "An image with advanced controls to make a visual statement.",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "image": {
+      "group": "design",
+      "selector": ".op-block__image-img",
+      "label": "Image ",
+      "fields": {
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        }
+      }
+    },
+    "ImageCaption": {
+      "group": "design",
+      "selector": ".op-block__image-caption",
+      "label": "Image Caption",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

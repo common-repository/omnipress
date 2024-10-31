@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/heading",
+  "version": "1.0.0",
+  "title": "Heading",
+  "category": "omnipress",
+  "description": "Create advanced heading with title, subtitle and separator controls.",
+  "icon": "",
+  "supports": {
+    "className": true,
+    "anchor": true
+  },
+  "attributes": {
+    "condition": {
+      "type": "object",
+      "default": {
+        "enable": true,
+        "options": [
+          {
+            "type": "user_rules",
+            "status": "logged_in",
+            "user_roles": [
+              "administrator"
+            ],
+            "user_ids": []
+          }
+        ]
+      }
+    }
+  },
+  "opSettings": {
+    "headingStyles": {
+      "group": "design",
+      "selector": ".op-block__heading-content",
+      "label": "Heading",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "subHeadingStyling": {
+      "group": "design",
+      "toggleAttribute": "isOpenSubHeading",
+      "selector": ".op-block__heading-sub",
+      "label": "Sub Heading",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "typography": true,
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "seperator": {
+      "group": "design",
+      "selector": ".op-block__heading-separator",
+      "label": "Separator",
+      "toggleAttribute": "seperatorIsActive",
+      "fields": {
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

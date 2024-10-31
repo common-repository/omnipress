@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/product-list",
+  "version": "1.0.0",
+  "title": "Product List",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Display WooCommerce products in a list view",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "toggle": {
+      "type": "object",
+      "default": {
+        "title": true,
+        "description": true,
+        "image": true,
+        "price": true,
+        "addToCart": true,
+        "badge": true,
+        "ratings": true,
+        "discount": true,
+        "categories": true,
+        "cart": true
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ],
+  "viewScript": "file:./view.js",
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "render": "file:./render.php",
+  "style": [
+    "file:./style-index.css"
+  ]
+}

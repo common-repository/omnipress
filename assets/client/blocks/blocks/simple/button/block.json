@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/button",
+  "version": "1.0.0",
+  "title": "Button",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add buttons to redirect user to different webpages",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "button": {
+      "group": "design",
+      "selector": "a.op-block-button__link.op-block-button__link > span",
+      "label": "Button",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "icons": {
+      "group": "design",
+      "selector": ".op-block-button__link i",
+      "label": "Icon",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "dimension": {
+          "fontSize": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

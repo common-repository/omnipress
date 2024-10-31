@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "omnipress/container-two",
+  "version": "0.1.0",
+  "title": "Container One",
+  "category": "omnipress",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": true,
+    "anchor": true
+  },
+  "opSettings": {
+    "wrapper": {
+      "group": "design",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "backgroundImage": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "backgroundType": {
+      "type": "string"
+    },
+    "videoOpacity": {
+      "type": "number"
+    },
+    "overlay": {
+      "type": "object",
+      "default": {}
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": ""
+    },
+    "videoBackground": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundGradient": {
+      "type": "string",
+      "default": ""
+    },
+    "useFlex": {
+      "type": "boolean",
+      "default": false
+    },
+    "flexDirection": {
+      "type": "string",
+      "default": "row"
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "flexDirectionTablet": {
+      "type": "string",
+      "default": "row"
+    },
+    "alignItemsTablet": {
+      "type": "string",
+      "default": "stretch"
+    },
+    "justifyContentTablet": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "flexDirectionMobile": {
+      "type": "string",
+      "default": "row"
+    },
+    "alignItemsMobile": {
+      "type": "string",
+      "default": "stretch"
+    }
+  },
+  "textdomain": "omnipress"
+}

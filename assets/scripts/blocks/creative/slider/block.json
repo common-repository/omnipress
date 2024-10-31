@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/slider",
+  "version": "1.0.0",
+  "title": "Slider",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create a captivating visual experience & impress your audience",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "file:../../../slider-view.js"
+  ],
+  "style": [
+    "file:../../../style-block-7.css"
+  ]
+}

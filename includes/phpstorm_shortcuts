@@ -1,0 +1,24 @@
+alt ins to generate method
+ctrl+alt+u view diagram
+ctrl+shift_t navigate to file
+alt+\ navigate within file
+ctrl+shift+a wrap with code block
+$var. show option
+shift + f12 show usage
+alt + f12 quickdefinition
+ctrl+r v refactoring code
+ctrl + d duplicate selected code
+ctrl + , to show recently opened file
+ctrl + alt + s
+to show live template
+ctrl + shift + v
+ctrl + shift + space show parameter
+ctrl + alt + space type matching completion
+ctrl + shift + r refactor 
+
+ctrl + shift + e recently changed code fragment
+
+ctrl + r , i inline or redund variable
+
+
+

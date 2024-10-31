@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/icon-box",
+  "version": "1.0.0",
+  "title": "Icon Box",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add icon and text description using a single block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ],
+  "viewScript": "file:./view.js",
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "render": "file:./render.php",
+  "style": [
+    "file:../../../style-block-4.css"
+  ]
+}

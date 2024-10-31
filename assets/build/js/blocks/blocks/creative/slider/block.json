@@ -1,0 +1,254 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/slider",
+  "version": "1.0.0",
+  "title": "Slider",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Create a captivating visual experience & impress your audience",
+  "supports": {
+    "html": false,
+    "className": true,
+    "dimensions": {
+      "minHeight": false,
+      "html": false
+    },
+    "interactivity": true
+  },
+  "providesContext": {
+    "omnipress/parentId": "blockId",
+    "classNames": "classNames"
+  },
+  "opSettings": {
+    "navigation": {
+      "group": "design",
+      "selector": "[class^='swiper-button']",
+      "label": "Navigation",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "pagination": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet",
+      "label": "Pagination",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "paginationActive": {
+      "group": "design",
+      "selector": ".swiper-pagination-bullet-active",
+      "label": "Pagination Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbar": {
+      "group": "design",
+      "selector": ".swiper-scrollbar",
+      "label": "Scrollbar",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "fontSize": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "scrollbarActive": {
+      "group": "design",
+      "selector": "swiper-scrollbar-drag",
+      "label": "Scrollbar Active",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    }
+  },
+  "attributes": {
+    "slideToggleOptions": {
+      "type": "object",
+      "default": {
+        "fade": false,
+        "loop": true,
+        "autoplay": true
+      }
+    },
+    "sliderType": {
+      "type": "string"
+    },
+    "classNames": {
+      "type": "string",
+      "default": "swiper-slide"
+    },
+    "showNavigation": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPagination": {
+      "type": "string",
+      "default": "false"
+    },
+    "showProgress": {
+      "type": "string",
+      "default": "true"
+    },
+    "showScrollbar": {
+      "type": "string",
+      "default": "false"
+    },
+    "loop": {
+      "type": "string",
+      "default": "false"
+    },
+    "autoplay": {
+      "type": "string",
+      "default": "false"
+    },
+    "paginationType": {
+      "type": "string",
+      "default": "bullets"
+    },
+    "effect": {
+      "type": "string",
+      "default": "slide"
+    },
+    "speed": {
+      "type": "number",
+      "default": 1000
+    },
+    "autoplayDelay": {
+      "type": "number",
+      "default": 2000
+    },
+    "autoplayDisableOnInteraction": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplayStopOnLast": {
+      "type": "string",
+      "default": "true"
+    },
+    "slidePerView": {
+      "type": "number",
+      "default": 1
+    },
+    "smSlidePerView": {
+      "type": "number",
+      "default": 1
+    },
+    "mdSlidePerView": {
+      "type": "number",
+      "default": 1
+    },
+    "spaceBetween": {
+      "type": "number",
+      "default": 20
+    },
+    "smSpaceBetween": {
+      "type": "number",
+      "default": 20
+    },
+    "mdSpaceBetween": {
+      "type": "number",
+      "default": 20
+    },
+    "blockId": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowIconNext": {
+      "type": "string",
+      "default": "fas fa-angle-right"
+    },
+    "arrowIconPrev": {
+      "type": "string",
+      "default": "fas fa-angle-left"
+    },
+    "navigation": {
+      "type": "object",
+      "default": {}
+    },
+    "pagination": {
+      "type": "object",
+      "default": {}
+    },
+    "scrollbar": {
+      "type": "object",
+      "default": {}
+    },
+    "paginationActive": {
+      "type": "object",
+      "default": {
+        "background": "#9b51e0"
+      }
+    },
+    "scrollbarActive": {
+      "type": "object",
+      "default": {}
+    },
+    "sliderWrapper": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "omnipress",
+  "viewScript": [
+    "omnipress-slider-script"
+  ],
+  "style": [
+    "omnipress-slider-style"
+  ]
+}

@@ -1,0 +1,253 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "omnipress/post-lists",
+	"version": "0.1.0",
+	"title": "Post Lists",
+	"category": "omnipress",
+	"description": "Display and filter latest posts.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 7
+		},
+		"postTitle": {
+			"type": "string",
+			"default": "h3"
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostTitle": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostDescription": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostAuthor": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayCategory": {
+			"type": "boolean",
+			"default": true
+		},
+		"displayPostDate": {
+			"type": "boolean",
+			"default": true
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"categories": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"layout": {
+			"type": "string",
+			"default": "layout-one"
+		},
+		"template": {
+			"type": "array",
+			"default": [ "category", "title", "meta", "description" ]
+		},
+		"imageSize": {
+			"type": "string",
+			"default": "full"
+		},
+		"imageBoxShadow": {
+			"type": "boolean",
+			"default": true
+		},
+		"excerptLength": {
+			"type": "number",
+			"default": 100
+		},
+		"titleLength": {
+			"type": "number",
+			"default": 25
+		},
+		"headFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"headFontWeight": {
+			"type": "string",
+			"default": 500
+		},
+		"headFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"headLineHeightType": {
+			"type": "string",
+			"default": "px"
+		},
+		"headFontSize": {
+			"type": "number",
+			"default": 24
+		},
+		"headFontSizeTablet": {
+			"type": "number",
+			"default": 18
+		},
+		"headFontSizeMobile": {
+			"type": "number",
+			"default": 15
+		},
+		"headLineHeight": {
+			"type": "number",
+			"default": 30
+		},
+		"headLineHeightTablet": {
+			"type": "number",
+			"default": ""
+		},
+		"headLineHeightMobile": {
+			"type": "number",
+			"default": ""
+		},
+		"headLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"descFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"descFontWeight": {
+			"type": "string",
+			"default": 400
+		},
+		"descFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"descLineHeightType": {
+			"type": "string",
+			"default": "px"
+		},
+		"descFontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"descFontSizeTablet": {
+			"type": "number",
+			"default": ""
+		},
+		"descFontSizeMobile": {
+			"type": "number",
+			"default": ""
+		},
+		"descLineHeight": {
+			"type": "number",
+			"default": 27
+		},
+		"descLineHeightTablet": {
+			"type": "number",
+			"default": ""
+		},
+		"descLineHeightMobile": {
+			"type": "number",
+			"default": ""
+		},
+		"descLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"thirdFontFamily": {
+			"type": "string",
+			"default": ""
+		},
+		"thirdFontWeight": {
+			"type": "string",
+			"default": 400
+		},
+		"thirdFontSizeType": {
+			"type": "string",
+			"default": "px"
+		},
+		"thirdLineHeightType": {
+			"type": "string",
+			"default": "px"
+		},
+		"thirdFontSize": {
+			"type": "number",
+			"default": 12
+		},
+		"thirdFontSizeTablet": {
+			"type": "number",
+			"default": ""
+		},
+		"thirdFontSizeMobile": {
+			"type": "number",
+			"default": ""
+		},
+		"thirdLineHeight": {
+			"type": "number",
+			"default": 20
+		},
+		"thirdLineHeightTablet": {
+			"type": "number",
+			"default": ""
+		},
+		"thirdLineHeightMobile": {
+			"type": "number",
+			"default": ""
+		},
+		"thirdLoadGoogleFonts": {
+			"type": "boolean",
+			"default": false
+		},
+		"animation": {
+			"type": "string",
+			"default": ""
+		},
+		"titleColor": {
+			"type": "string",
+			"default": ""
+		},
+		"descriptionColor": {
+			"type": "string",
+			"default": ""
+		},
+		"descriptionBgColor": {
+			"type": "string",
+			"default": ""
+		},
+		"metaColor": {
+			"type": "string",
+			"default": ""
+		},
+		"catColor": {
+			"type": "string",
+			"default": ""
+		},
+		"catBgColor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"usesContext": [ "postId" ],
+	"textdomain": "omnipress",
+	"editorScript": "file:./post-lists.js",
+	"editorStyle": "file:./post-lists.css",
+	"style": "file:./style-post-lists.css"
+}

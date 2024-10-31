@@ -1,0 +1,148 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/woocategory",
+  "version": "1.0.0",
+  "title": "Products Category Grid",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Product Category Grid - Display a list of products from WooCommerce product category with a chosen preset style, offering flexibility in how it looks with different settings.",
+  "supports": {
+    "className": true
+  },
+  "attributes": {
+    "preset": {
+      "type": "string",
+      "default": "one"
+    },
+    "columns": {
+      "type": "number",
+      "default": 6
+    },
+    "subCategory": {
+      "type": "boolean",
+      "default": true
+    },
+    "rows": {
+      "type": "number",
+      "default": 1
+    },
+    "carousel": {
+      "type": "boolean",
+      "default": false
+    },
+    "options": {
+      "type": "string",
+      "default": "arrow pagination"
+    },
+    "arrowNext": {
+      "type": "string",
+      "default": "fa fa-angle-right"
+    },
+    "arrowPrev": {
+      "type": "string",
+      "default": "fa fa-angle-left"
+    }
+  },
+  "opSettings": {
+    "card": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category .op-woo__card",
+      "label": "Card",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "image": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category figure .op-woo__category-image",
+      "label": "Image",
+      "fields": {
+        "dimension": {
+          "width": true,
+          "height": true
+        },
+        "spacing": {
+          "margin": true
+        },
+        "border": {
+          "border": false,
+          "borderRadius": true
+        }
+      }
+    },
+    "title": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category .op-woo__category-title",
+      "label": "Title",
+      "fields": {
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "count": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category .op-woo__card .product-category-count",
+      "label": "Count",
+      "fields": {
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    },
+    "content": {
+      "group": "design",
+      "selector": ".category-wrapper .op-woo__category-card-wrapper .op-woo__category-card.op-woo__category .op-woo__card",
+      "label": "Content",
+      "fields": {
+        "color": {
+          "background": true
+        },
+        "spacing": {
+          "padding": true,
+          "margin": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ],
+  "viewScript": "file:../../../category-grid-view.js",
+  "render": "file:./render.php",
+  "style": [
+    "file:../../../style-block-8.css"
+  ]
+}

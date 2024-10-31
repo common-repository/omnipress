@@ -1,0 +1,134 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/contact-form",
+  "version": "1.0.0",
+  "title": "Contact Form",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Get started with contact forms – in just a few clicks!",
+  "supports": {
+    "anchor": true
+  },
+  "opSettings": {
+    "form": {
+      "group": "design",
+      "selector": ".content .wpcf7 form",
+      "label": "Form",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "formHeader": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header",
+      "label": "Header",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        }
+      }
+    },
+    "formLabel": {
+      "group": "design",
+      "selector": ".content .content .wpcf7 form .wpcf7-form-control-wrap",
+      "label": "Form Label",
+      "fields": {
+        "spacing": {
+          "margin": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "formInput": {
+      "group": "design",
+      "selector": ".wpcf7 form textarea, .op-block__contact-form .wpcf7 form select, .op-block__contact-form .wpcf7 form input:not([type=file]):not([type=radio]):not([type=checkbox]):not([type=submit])",
+      "label": "Form Input",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "submitButton": {
+      "group": "design",
+      "selector": ".wpcf7 form input[type=submit]",
+      "label": "Submit Button",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true,
+          "background": true
+        },
+        "border": {
+          "border": true,
+          "borderRadius": true
+        },
+        "typography": true
+      }
+    },
+    "titleStyle": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header h4",
+      "label": "Form Title",
+      "fields": {
+        "spacing": {
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    },
+    "descriptionStyle": {
+      "group": "design",
+      "selector": ".op-block__contact-form-header p",
+      "label": "Form Description",
+      "fields": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        },
+        "color": {
+          "text": true
+        },
+        "typography": true
+      }
+    }
+  },
+  "textdomain": "omnipress"
+}

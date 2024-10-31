@@ -1,0 +1,89 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "omnipress/woocategory-list",
+  "version": "1.0.0",
+  "title": "Products Category List",
+  "category": "omnipress-woo",
+  "icon": "",
+  "description": "Display WooCommerce product categories in a list view",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "preset": {
+      "type": "string",
+      "default": "one"
+    },
+    "hasEmpty": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasCount": {
+      "type": "boolean",
+      "default": true
+    },
+    "layout": {
+      "type": "number",
+      "default": 1
+    },
+    "isDropdown": {
+      "type": "boolean",
+      "default": false
+    },
+    "categorySelected": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectedCategoriesList": {
+      "type": "array",
+      "default": []
+    },
+    "wrapper": {
+      "type": "object",
+      "default": {}
+    },
+    "item": {
+      "type": "object",
+      "default": {}
+    },
+    "image": {
+      "type": "object",
+      "default": {}
+    },
+    "label": {
+      "type": "object",
+      "default": {}
+    },
+    "count": {
+      "type": "object",
+      "default": {}
+    },
+    "showChildOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "omnipress",
+  "keywords": [
+    "woocommerce",
+    "woo",
+    "category",
+    "products"
+  ],
+  "viewScript": "file:./view.js",
+  "editorScript": [
+    "file:./index.js"
+  ],
+  "render": "file:./render.php",
+  "style": [
+    "file:./style-index.css"
+  ]
+}

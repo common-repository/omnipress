@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../assets/block.schema.json",
+  "apiVersion": 2,
+  "name": "omnipress/megamenu",
+  "version": "1.0.0",
+  "title": "Mega Menu",
+  "category": "omnipress",
+  "icon": "",
+  "description": "Add vertical and horizontal menu layouts with multiple setting options",
+  "supports": {
+    "className": true
+  },
+  "textdomain": "omnipress",
+  "style": [
+    "file:../../../style-block-4.css"
+  ]
+}
